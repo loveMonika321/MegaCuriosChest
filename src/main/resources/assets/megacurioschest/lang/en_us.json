@@ -1,0 +1,14 @@
+{
+    "item.megacurioschest.mega_curios_chest": "Mega Curios Chest",
+    "item.megacurioschest.ender_mega_curios_chest": "Ender Mega Curios Chest",
+    "megacurioschest.container.title": "Mega Curios Chest",
+    "megacurioschest.container.ender_title": "Ender Mega Curios Chest",
+    "megacurioschest.gui.available": "Available Curios:",
+    "megacurioschest.gui.rmb_equip": "Right-click: quick-equip to first valid slot",
+    "megacurioschest.gui.srmb_equip": "Shift+Right-click: equip to second slot",
+    "megacurioschest.gui.page.next": "Next",
+    "megacurioschest.gui.page.prev": "Prev",
+    "megacurioschest.gui.curios": "Curios",
+    "key.megacurioschest.open_chest": "Open Mega Curios Chest",
+    "key.megacurioschest.open_ender_chest": "Open Ender Mega Curios Chest"
+}

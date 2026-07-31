@@ -1,0 +1,14 @@
+{
+    "item.megacurioschest.mega_curios_chest": "巨型饰品箱",
+    "item.megacurioschest.ender_mega_curios_chest": "末影巨型饰品箱",
+    "megacurioschest.container.title": "巨型饰品箱",
+    "megacurioschest.container.ender_title": "末影巨型饰品箱",
+    "megacurioschest.gui.available": "可用饰品:",
+    "megacurioschest.gui.rmb_equip": "右键:快捷装备到第一个有效槽位",
+    "megacurioschest.gui.srmb_equip": "Shift+右键:装备到第二个槽位",
+    "megacurioschest.gui.page.next": "下一页",
+    "megacurioschest.gui.page.prev": "上一页",
+    "megacurioschest.gui.curios": "饰品栏",
+    "key.megacurioschest.open_chest": "打开巨型饰品箱",
+    "key.megacurioschest.open_ender_chest": "打开末影巨型饰品箱"
+}

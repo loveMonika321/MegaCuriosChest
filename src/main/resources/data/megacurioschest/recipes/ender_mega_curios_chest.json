@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "OEO",
+        "ECE",
+        "OEO"
+    ],
+    "key": {
+        "O": { "item": "minecraft:obsidian" },
+        "E": { "item": "minecraft:ender_eye" },
+        "C": { "item": "megacurioschest:mega_curios_chest" }
+    },
+    "result": {
+        "item": "megacurioschest:ender_mega_curios_chest",
+        "count": 1
+    }
+}

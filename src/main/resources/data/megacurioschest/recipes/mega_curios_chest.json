@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " I ",
+        "AED",
+        " G "
+    ],
+    "key": {
+        "I": { "item": "minecraft:iron_ingot" },
+        "G": { "item": "minecraft:gold_ingot" },
+        "A": { "item": "minecraft:amethyst_shard" },
+        "D": { "item": "minecraft:diamond" },
+        "E": { "item": "minecraft:ender_chest" }
+    },
+    "result": {
+        "item": "megacurioschest:mega_curios_chest",
+        "count": 1
+    }
+}

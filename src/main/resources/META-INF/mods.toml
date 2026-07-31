@@ -1,0 +1,42 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+issueTrackerURL=""
+
+[[mixins]]
+config = "megacurioschest.mixins.json"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="${mod_authors}"
+description='''
+${mod_description}
+
+- Large portable curios chest (configurable rows/cols).
+- Same trinkets stack up to max int.
+- Quick-equip via right-click, skipping the generic curio slot.
+- Beyond Dimensions JEI recipe-fill integration (Ender Mega Curios Chest items, priority extraction).
+'''
+
+[[dependencies.${mod_id}]]
+    modId="forge"
+    mandatory=true
+    versionRange="${forge_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="curios"
+    mandatory=true
+    versionRange="[5.2.0-beta.3+1.20.1,)"
+    ordering="NONE"
+    side="BOTH"

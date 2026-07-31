@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.megacurioschest.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "DimensionsCraftMenuMixin"
+  ],
+  "client": [
+    "TransferHelperMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
