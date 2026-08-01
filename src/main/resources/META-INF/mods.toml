@@ -3,9 +3,6 @@ loaderVersion="${loader_version_range}"
 license="${mod_license}"
 issueTrackerURL=""
 
-[[mixins]]
-config = "megacurioschest.mixins.json"
-
 [[mods]]
 modId="${mod_id}"
 version="${mod_version}"
@@ -17,7 +14,6 @@ ${mod_description}
 - Large portable curios chest (configurable rows/cols).
 - Same trinkets stack up to max int.
 - Quick-equip via right-click, skipping the generic curio slot.
-- Beyond Dimensions JEI recipe-fill integration (Ender Mega Curios Chest items, priority extraction).
 '''
 
 [[dependencies.${mod_id}]]

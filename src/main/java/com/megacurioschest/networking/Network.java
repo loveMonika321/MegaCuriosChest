@@ -31,12 +31,6 @@ public class Network {
                 .consumerNetworkThread(PageChangePacket::handle)
                 .add();
 
-        INSTANCE.messageBuilder(EnderChestSyncPacket.class, nextID())
-                .encoder(EnderChestSyncPacket::encode)
-                .decoder(EnderChestSyncPacket::new)
-                .consumerNetworkThread(EnderChestSyncPacket::handle)
-                .add();
-
         INSTANCE.messageBuilder(SlotChangedPacket.class, nextID())
                 .encoder(SlotChangedPacket::encode)
                 .decoder(SlotChangedPacket::new)

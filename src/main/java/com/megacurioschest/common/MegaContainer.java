@@ -2,11 +2,9 @@ package com.megacurioschest.common;
 
 import com.megacurioschest.Config;
 import com.megacurioschest.compat.CuriosHelper;
-import com.megacurioschest.networking.EnderChestSyncPacket;
 import com.megacurioschest.networking.Network;
 import com.megacurioschest.networking.PageChangePacket;
 import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -500,23 +498,5 @@ public class MegaContainer extends AbstractContainerMenu {
     /** 供网络包调用:服务端重建槽位 (curios 槽位数量变化时) */
     public void rebuildSlots() {
         refreshCurioSlots();
-    }
-
-    @Override
-    public void removed(@NotNull Player player) {
-        super.removed(player);
-        // 末影饰品箱关闭时，将最新内容同步到客户端缓存，保证 JEI 后续可用
-        if (!player.level().isClientSide()
-                && handler instanceof EnderMegaStackHandler
-                && player instanceof ServerPlayer serverPlayer) {
-            List<ItemStack> items = new ArrayList<>();
-            for (int i = 0; i < handler.getSlots(); i++) {
-                ItemStack s = handler.getStackInSlot(i);
-                if (!s.isEmpty()) {
-                    items.add(s.copy());
-                }
-            }
-            Network.sendToPlayer(new EnderChestSyncPacket(items), serverPlayer);
-        }
     }
 }
