@@ -1,9 +1,17 @@
 buildscript {
-    repositories {
-        maven { url = 'https://maven.minecraftforge.net/' }
-        maven { url = 'https://maven.theillusivec4.top/' }
-        mavenCentral()
+        repositories {
+    maven {
+        name 'Forge'
+        url 'https://maven.minecraftforge.net/'
     }
+    maven {
+        url 'https://maven.aliyun.com/repository/public'
+    }
+    maven {
+        url 'https://maven.aliyun.com/repository/central'
+    }
+    mavenCentral()
+}
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:6.0.16'
     }
